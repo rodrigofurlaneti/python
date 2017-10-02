@@ -1,0 +1,46 @@
+#1/use/bin/python3
+
+def main():
+    s = 'ola String'
+    print("Upper => Todas letras da variaver fica em caixa alta")
+    print(s.upper())
+    print("Capitalize => Somente o primeiro caracter fica em letra caixa alta ")
+    print(s.capitalize())
+    print("Format => Inseri no texto a posição do dado, aonde tiver {} ou %d")
+    print("Ola {} nova string".format(10))
+    print("Ola nova string %d" %100)
+    print("Swapcase => Inverte o tamanho da string, caixa baixa e caixa alta")
+    print(s.swapcase())
+    print("Find => Faz a busca do caracter na vaviaver e retorna a posição, sempre começa no 1")
+    print(s.find('g'))
+    print("Replace = Altera o texto da variavel")
+    print(s.replace('String', 'mudei'))
+    print("Strip => Retira o estaço dos dois lados do texto")
+    print(s.split())
+    print("Rstrip => Retira o espaço do lado direito do texto")
+    print(s.rstrip())
+    print("Isalnum => Se é número")
+    print(s.isalnum())
+    print("Isalpha => Se é alfanumerico")
+    d = 'olastring'
+    print(d.isalpha())
+    x, y = 5, 10
+    print(x,y)
+    print('O primeiro valor é {} e o segundo valor {}'.format(x,y))
+    print('O primeiro valor é {1} e o segundo valor {0}, alterar a pos.'.format(x,y))
+    dicionario = dict(id=x, num=y)
+    print(dicionario)
+    print("Split => Coloca a string como um array")
+    print(s.split())
+    print("Split ('S') => Busca o paramentro S, retorna sem o parametro")
+    print(s.split('S'))
+    print("Split FOR => Percorrer o array")
+    lista = s.split()
+    print(lista)
+    for l in lista:
+        print(l)
+    print("Join => Separa com o caracter")
+    novastring = "/><".join(lista)
+    print(novastring)
+
+if __name__ == "__main__" : main()
